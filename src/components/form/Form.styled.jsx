@@ -2,25 +2,30 @@ import { Form } from 'formik';
 import styled from 'styled-components';
 
 export const FormStyl= styled(Form)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+box-sizing: border-box;
 `;
 
 export const Label = styled.label`
-  display: flex;
-  gap: 15px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+color: rgb(42, 42, 42);
+font-size: 20px;
+margin-bottom: 32px;
 `;
 
 export const Button = styled.button`
-  width: 250px;
-  height: 45px;
-  padding: 10px;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 119, 204);
+padding: 8px 16px;
+border-radius: 4px;
+font-size: 16px;
+display: block;
+cursor: pointer;
 
-  :hover,
-  :focus {
-    background-color: blue;
-    color: white;
-  }
+:hover {
+  background-color: rgb(0, 101, 173);
+}
 `;
+
+

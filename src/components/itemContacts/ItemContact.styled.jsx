@@ -1,12 +1,28 @@
 import styled from 'styled-components';
 
-export const Buttons = styled.button`
-  margin-left: 25px;
-  cursor: pointer;
+export const Items = styled.li`
+display: flex;
+justify-content: space-between;
+align-items: center;
+`;
 
-  :hover,
-  :focus {
-    background-color: blue;
-    color: white;
-  }
+export const Description = styled.p`
+color: rgb(42, 42, 42);
+font-size: 24px;
+margin: 0;
+`;
+
+export const Buttons = styled.button`
+color: rgb(255, 255, 255);
+background-color: rgb(0, 119, 204);
+padding: 8px 16px;
+border-radius: 4px;
+font-size: 16px;
+display: block;
+cursor: pointer;
+transition: all 250ms linear 0s;
+
+:hover {
+  background-color: rgb(0, 101, 173);
+}
 `;
