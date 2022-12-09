@@ -1,19 +1,20 @@
 import PropTypes from 'prop-types';
 import { ItemContact } from 'components/itemContacts/ItemContacts';
-import {List} from 'components/contacts/Contacts.styled'
+import {List, Items} from 'components/contacts/Contacts.styled'
 
 export const Contacts = ({ contacts, onDelite }) => {
   return (
     <List>
       {contacts.map(({ id, name, number }) => {
         return (
-          <ItemContact
-            key={id}
+          <Items key={id}>
+            <ItemContact            
             id={id}
             name={name}
             number={number}
             onDelite={onDelite}
-          />
+            />
+          </Items>
         );
       })}
     </List>

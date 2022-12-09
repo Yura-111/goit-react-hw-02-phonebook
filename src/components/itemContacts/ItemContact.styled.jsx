@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const Items = styled.li`
-display: flex;
-justify-content: space-between;
-align-items: center;
-`;
-
 export const Description = styled.p`
 color: rgb(42, 42, 42);
 font-size: 24px;
